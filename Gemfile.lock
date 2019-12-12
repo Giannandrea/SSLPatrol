@@ -1,0 +1,29 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ansi (1.5.0)
+    ast (2.4.0)
+    escape_utils (1.2.1)
+    oga (2.15)
+      ast
+      ruby-ll (~> 2.1)
+    ox (2.11.0)
+    ruby-ll (2.1.2)
+      ansi
+      ast
+    xmlhasher (1.0.5)
+      escape_utils (~> 1.2)
+      ox (~> 2.11.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  oga (= 2.15)
+  xmlhasher (= 1.0.5)
+
+RUBY VERSION
+   ruby 2.5.1p57
+
+BUNDLED WITH
+   1.16.1

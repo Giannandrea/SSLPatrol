@@ -1,0 +1,34 @@
+{
+	"ssltest": {
+		"hosts": ["www.domotz.com"],
+		"pk": {
+			"error": false,
+			"bits":2048
+		},
+		"_comment": "tlsSecureVersions: is an array with TLSv1.2, TLSv1.1, TLSv1.0",
+		"tlsSecureVersions": ["TLSv1.2"],
+		"_comment": "cipherlevel: is an array with A,B,C,D, A=Advanced (most secure), B=Broad Compatibility, C=Widest Compatibility, D=Legacy (less secure)",
+		"cipherlevel": ["A", "B"],
+		"heartbleedCheck": true,
+		"validityCheck": true,
+		"selfsigned": false,
+		"expireAfterDays": 10,
+		"mustSupportCompression": false,
+		"mustSupportSecureRenegotiation": true
+	},
+	"openports": [{
+		"hosts": ["www.domotz.com"],
+		"services": [
+			{
+				"port": 22,
+				"server": "OpenSSH",
+				"version": false
+			},
+			{
+				"port": 80,
+				"server": "nginx",
+				"version": false
+			}
+		]
+		}]
+}
